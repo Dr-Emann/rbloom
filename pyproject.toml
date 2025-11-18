@@ -23,3 +23,8 @@ Issues = "https://github.com/KenanHanke/rbloom/issues"
 
 [tool.maturin]
 sdist-include = ["LICENSE", "README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["*_test.py", "test_*.py"]
+python_functions = ["test_*"]
