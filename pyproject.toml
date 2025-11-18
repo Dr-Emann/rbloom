@@ -28,3 +28,9 @@ sdist-include = ["LICENSE", "README.md"]
 testpaths = ["tests"]
 python_files = ["*_test.py", "test_*.py"]
 python_functions = ["test_*"]
+
+[tool.pytest.benchmark]
+# Disable garbage collection during benchmarks for more consistent results
+disable_gc = true
+# Minimum number of rounds for each benchmark
+min_rounds = 5
